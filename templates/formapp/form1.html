@@ -1,0 +1,5 @@
+<form method="POST" action="/result/">
+    {{form.as_p}} <!-- .as_p formularz zostanie wyswietlony wnowych liniach/paragrafach-->
+    {% csrf_token %}   <!-- trzeba doczytć o tym tagu/tokenie -->
+  <input type="submit" class="btn btn-primary" value="Submit">
+</form>
